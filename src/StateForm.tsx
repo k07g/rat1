@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 
 export default function StateForm() {
+  // 一意なid値を準備
+  const id = useId();
   // フォームとして扱う値をStateとして宣言
   const [form, setForm] = useState({
     name: "山田太郎",
@@ -21,9 +23,9 @@ export default function StateForm() {
     <form>
       {/* State値を個々のフォーム要素に割り当て */}
       <div>
-        <label htmlFor="name">名前:</label>
+        <label htmlFor={`${id}-name`}>名前:</label>
         <input
-          id="name"
+          id={`${id}-name`}
           name="name"
           type="text"
           onChange={handleForm}
@@ -31,9 +33,9 @@ export default function StateForm() {
         />
       </div>
       <div>
-        <label htmlFor="age">年齢:</label>
+        <label htmlFor={`${id}-age`}>年齢:</label>
         <input
-          id="age"
+          id={`${id}-age`}
           name="age"
           type="number"
           onChange={handleForm}
