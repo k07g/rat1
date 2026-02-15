@@ -4,7 +4,7 @@ export default function FormTextarea() {
   // Stateを初期化
   const [form, setForm] = useState({
     comment: `さまざまなフォーム要素をReactで実装する方法について解説しておきます。
-　なお、<imput>要素ではtype属性を変更することで、数値スピナー、日付入力ボックスなど、さまざまな入力ボックスを表現できます。`,
+なお、<imput>要素ではtype属性を変更することで、数値スピナー、日付入力ボックスなど、さまざまな入力ボックスを表現できます。`,
   });
 
   // テキストエリアの変更時に入力値をStateに反映
@@ -27,8 +27,8 @@ export default function FormTextarea() {
       <textarea
         id="comment"
         name="comment"
-        cols="30"
-        rows="7"
+        cols={30}
+        rows={7}
         value={form.comment}
         onChange={handleForm}
       ></textarea>
