@@ -9,6 +9,7 @@ import FormTextarea from './FormTextarea.tsx'
 import FormSelect from './FormSelect.tsx'
 import FormList from './FormList';
 import FormRadio from './FormRadio.tsx'
+import FormCheck from './FormCheck.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -20,5 +21,6 @@ createRoot(document.getElementById('root')!).render(
     <FormSelect />
     <FormList />
     <FormRadio />
+    <FormCheck />
   </StrictMode>,
 )
