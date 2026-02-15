@@ -6,6 +6,7 @@ import SelectComp from './SelectComp.tsx'
 import StateForm from './StateForm.tsx'
 import StateFormUC from './StateFormUC.tsx'
 import FormTextarea from './FormTextarea.tsx'
+import FormSelect from './FormSelect.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')!).render(
     <StateForm />
     <StateFormUC />
     <FormTextarea />
+    <FormSelect />
   </StrictMode>,
 )
