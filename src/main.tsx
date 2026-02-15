@@ -7,6 +7,7 @@ import StateForm from './StateForm.tsx'
 import StateFormUC from './StateFormUC.tsx'
 import FormTextarea from './FormTextarea.tsx'
 import FormSelect from './FormSelect.tsx'
+import FormList from './FormList';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -16,5 +17,6 @@ createRoot(document.getElementById('root')!).render(
     <StateFormUC />
     <FormTextarea />
     <FormSelect />
+    <FormList />
   </StrictMode>,
 )
