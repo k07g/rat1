@@ -11,6 +11,7 @@ import FormList from './FormList';
 import FormRadio from './FormRadio.tsx'
 import FormCheck from './FormCheck.tsx'
 import FormCheckMulti from './FormCheckMulti.tsx'
+import FormFile from './FormFile.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -24,5 +25,6 @@ createRoot(document.getElementById('root')!).render(
     <FormRadio />
     <FormCheck />
     <FormCheckMulti />
+    <FormFile />
   </StrictMode>,
 )
