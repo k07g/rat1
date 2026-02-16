@@ -13,6 +13,7 @@ import FormCheck from './FormCheck.tsx'
 import FormCheckMulti from './FormCheckMulti.tsx'
 import FormFile from './FormFile.tsx'
 import StateNest from './StateNest.tsx'
+import StateNestImmer from './StateNestImmer.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -28,5 +29,6 @@ createRoot(document.getElementById('root')!).render(
     <FormCheckMulti />
     <FormFile />
     <StateNest />
+    <StateNestImmer />
   </StrictMode>,
 )
