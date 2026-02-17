@@ -15,6 +15,7 @@ import FormFile from './FormFile.tsx'
 import StateNest from './StateNest.tsx'
 import StateNestImmer from './StateNestImmer.tsx'
 import StateNestImmer2 from './StateNestImmer2.tsx'
+import StateTodo from './StateTodo.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -32,5 +33,6 @@ createRoot(document.getElementById('root')!).render(
     <StateNest />
     <StateNestImmer />
     <StateNestImmer2 />
+    <StateTodo />
   </StrictMode>,
 )
